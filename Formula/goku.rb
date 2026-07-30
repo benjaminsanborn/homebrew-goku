@@ -5,20 +5,20 @@
 class Goku < Formula
   desc "Compliant CI/CD for AI agents"
   homepage ""
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benjaminsanborn/goku/releases/download/v0.2.0/goku_Darwin_x86_64.tar.gz"
-      sha256 "c4abc16de1a42d821fd20fe65c20f37d16bcebdc5cabbf55296c3c15a3ffbc3b"
+      url "https://github.com/benjaminsanborn/goku/releases/download/v0.3.0/goku_Darwin_x86_64.tar.gz"
+      sha256 "356064ffdc50302e761b74f77b1f7e4c24b2ed067931a35b915fc1f32c77ded8"
 
       define_method(:install) do
         bin.install "goku"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/benjaminsanborn/goku/releases/download/v0.2.0/goku_Darwin_arm64.tar.gz"
-      sha256 "bf6181a3f370c1717e7d87875579701e8a7f6eae064a5fe44cfce2ef98ae76bf"
+      url "https://github.com/benjaminsanborn/goku/releases/download/v0.3.0/goku_Darwin_arm64.tar.gz"
+      sha256 "66000d874aaca249dee70c565465f9cf2d74a38387c34c4ff1669fd1d14457f7"
 
       define_method(:install) do
         bin.install "goku"
@@ -28,15 +28,15 @@ class Goku < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benjaminsanborn/goku/releases/download/v0.2.0/goku_Linux_x86_64.tar.gz"
-      sha256 "22439d95bc4379fbf2083c075b5c14052d3234bf1acff51f305169b19640de4d"
+      url "https://github.com/benjaminsanborn/goku/releases/download/v0.3.0/goku_Linux_x86_64.tar.gz"
+      sha256 "e039a5e0913a386d16028c2e67ab912d09b11ae8a829ae69a659b831830720a2"
       define_method(:install) do
         bin.install "goku"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benjaminsanborn/goku/releases/download/v0.2.0/goku_Linux_arm64.tar.gz"
-      sha256 "c8991807cd893ad1887fc4aef2040d9e2a842a865a9deba70fbc9af050185d3c"
+      url "https://github.com/benjaminsanborn/goku/releases/download/v0.3.0/goku_Linux_arm64.tar.gz"
+      sha256 "8a7153ab3acb26ff0bf9003ac351ff7ceda2d850c67342e047875f32ef424b8f"
       define_method(:install) do
         bin.install "goku"
       end
